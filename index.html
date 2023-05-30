@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+<div class="container">
+  <div class="sub-box">
+    <header>
+      <h1>Stay updated!</h1>
+      <main><p>Join 60,000+ product managers receiving monthly updates on:</p></main>
+    </header>
+    <section>
+      <div class="list">
+      <img src="./assets/images/icon-list.svg">
+      <p>Product discovery and building what matters</p>
+      <img src="./assets/images/icon-list.svg">
+      <p>Measuring to ensure updates are a success</p>
+      <img src="./assets/images/icon-list.svg">
+      <p>And much more!</p>
+      </div>
+      <!--form-->
+      <form data-name="form">
+        <label for="email">Email address</label>
+        <span id="error"></span>
+        <input id="email" name="email" type="email">
+        <div id="btn">Subscribe to monthly newsletter</div>
+      </form>
+    </section>
+  </div>
+  <img class="image desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration">
+  <img class="image mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration">
+</div>
+
+<!--seccess -->
+<div class="success-box">
+  <img src="./assets/images/icon-success.svg" alt="success">
+  <h2> Thanks for subscribing!</h2>
+  <p>A confirmation email has been sent to
+  <span id="yourEmail"></span> Please open it and click the button inside to confirm your subscription.</p>
+  <div id="btn2">Dismiss message</div>
+</div>
+<script src="./app.js"></script>
+</body>
+</html>
