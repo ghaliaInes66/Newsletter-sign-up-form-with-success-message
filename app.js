@@ -7,7 +7,8 @@ const container2=document.querySelector('.success-box');
 const yourEmail=document.querySelector('#yourEmail');
 
 function ValidEmail(){
-    if(!email.value.match("@") ||email.value==''){
+    let  valid=/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+    if(!email.value.match( valid) ||email.value==''){
     error.textContent='Valid email required';
     email.style.borderColor='rgb(219, 104, 104)';
     email.style.color='rgb(219, 104, 104)';
@@ -22,8 +23,8 @@ function subscribe(){
         return;
     }
     error.textContent='';
-    email.style.borderColor='hsl(235, 15%, 86%)';
-    email.style.color='hsl(235, 15%, 86%)';
+    email.style.borderColor='hsl(231, 7%, 60%)';
+    email.style.color='hsl(231, 7%, 60%)';
     email.style.backgroundColor=' white';
 
 container1.style.display='none';
